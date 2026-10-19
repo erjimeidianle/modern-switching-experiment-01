@@ -61,3 +61,11 @@ AI自拟的组合反例采用packet、3tick、200bit缓存：tick0到200、tick1
 以上为首次预检的历史记录；后续“审阅完毕直接提交吧”授权已取代等待提交确认的状态。提交前再次运行预检通过，GitHub只读查询确认没有本人重复PR。Git默认Windows TLS后端ls-remote出现SEC_E_NO_CREDENTIALS，改用仅单次命令的`-c http.sslBackend=openssl`后正常读到远端main=bc9099e；未关闭证书校验或更改全局Git设置。后续提交与PR实际状态见Git历史、PR正文及本地results/logs/09_submission_result.json。
 
 审阅后完整测试再次24 passed。暂存检查发现原PRD和REPORT的Markdown双空格硬换行，被Git默认空白检查提示；保留原始PRD，增加项目.gitattributes的Markdown空白规则及结果/PRD原始字节规则。该规则用于保留合法Markdown换行及真实产物哈希，没有更改任何教师测试或评分。
+
+## Word报告交付
+
+用户随后要求最终实验报告使用Word版本，并询问如何允许浏览器访问GitHub。AI使用已有文档技能与配套Python3.12运行时中的python-docx，将既有REPORT.md转换为项目reports目录内的Word报告，添加5张可编辑表格，嵌入原有4张图，没有改变实验数据。常规render_docx.py因Windows环境没有LibreOffice而失败，错误日志留在.build/word_report；随后复用已安装的Microsoft Word 2021 API导出PDF，并沿用配套render_docx.py的PNG生成流程，没有下载新Office环境或修改应用内部运行库。
+
+初次Word导出后的COM关闭调用需要[ref]参数，已在项目脚本中修正；导出PDF的实际页数由pdfinfo核实，不使用Word尚未完成排版时返回的页数。最终7页全部打开检查，4张图及中文显示正常。数值验证中，首次绝对误差阈值在四位小数舍入边界出现浮点误判，改为与明确的四位小数显示格式精确比较后，8行基线指标、8行守恒、12行参数指标全部一致。教师受保护文件和基线5文件哈希保持不变。本人姓名、学号及既有AI使用声明保留。
+
+Word报告、制作脚本和最终验证摘要属于本项目资源，缓存与预览均在.build/word_report。浏览器授权操作说明经实际读取OpenAI官方页面核实：内置浏览器网站权限在桌面应用Settings > Browser管理，GitHub连接器403与浏览器站点访问权限是不同问题。AI没有代为修改应用权限。

@@ -4,6 +4,8 @@
 
 ## 本地交付清单
 
+正式实验报告已按用户要求提供Word版本：[实验一报告 郑航宇 2024280087](../reports/实验一报告_郑航宇_2024280087.docx)。REPORT.md作为可追溯的文字来源继续保留，Word内嵌4张真实图表并有5张可编辑表格。
+
 必需：`src/part1_circuit.py`、`src/part2_packet.py`、`src/metrics.py`、`REPORT.md`、`AI_LOG.md`、`student_tests/test_my_case.py`；
 `results/comparison.json`、`comparison.csv`、`comparison_metrics.png`、`queue_occupancy.png`、`pcm_frame_view.png`；
 `results/extra/header_sweep.json`、`header_sweep.csv`、`header_sweep.png`。

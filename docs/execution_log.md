@@ -245,3 +245,22 @@ Git未配置提交署名；本次commit仅通过`git -c user.name=郑航宇 -c u
 本次提交将逐文件添加三个源文件、报告、AI记录、自拟测试、3个项目复现脚本、依赖锁定文件、项目解释器配置、执行记录和清单、报告所引PRD及其转换审计；基线5文件、附加实验3文件和本地原始日志按确切文件列表强制添加。其余原始阶段任务说明继续保留在本地，不把缓存或同学名单加入本次变更。实际提交SHA、PR网址和最新评分状态由后续Git/PR及本地`results/logs/09_submission_result.json`记录。
 
 审阅后再次执行完整测试，`24 passed in 0.37s`，输出`results/logs/09_full_tests.txt`。暂存后默认`git diff --cached --check`发现REPORT和原始PRD中Markdown用于硬换行的双空格（退出码2）。未改动经审计的PRD，而新增项目`.gitattributes`声明Markdown允许行尾空格、`results/**`与原始任务Markdown按原始字节存储，避免Git自动换行转换破坏数据或PRD的SHA256。随后重新暂存，检查索引中的原始证据与工作区字节一致，并复核变更范围及凭据模式，再创建commit。
+
+## Word版本修改与交付 2026-10-19
+
+用户要求将最后的实验报告改为Word版本。新增项目文件`reports/实验一报告_郑航宇_2024280087.docx`、`scripts/build_word_report.py`、`scripts/render_word_report.py`、`scripts/render_word_report.ps1`；更新本记录、AI_LOG、交付清单和.gitattributes中的Word原始字节规则。没有改动三个仿真函数、教师文件或基线产物。
+
+依赖经load_workspace_dependencies定位：复用配套Python3.12.14中的python-docx1.2.0和Pillow、Poppler，使用现有Microsoft Word 2021导出，仅创建本项目文档；没有新增用户级工具、全局包或大型环境。缓存和预览位于`.build/word_report/`。
+
+实际执行命令（`$bundlePython`、`$bundleNode`为依赖工具返回的完整可执行路径）：
+
+```powershell
+& $bundleNode <documents-skill>/container_tools/mark_artifact_operation_started.mjs --operation-kind create --expected-output-count 1 --output-format docx
+& $bundlePython scripts/build_word_report.py
+& $bundlePython <documents-skill>/render_docx.py reports/实验一报告_郑航宇_2024280087.docx --output_dir .build/word_report/render --emit_pdf
+& $bundlePython scripts/render_word_report.py --canonical-renderer <documents-skill>/render_docx.py
+```
+
+常规渲染退出码1：缺少LibreOffice soffice.exe。读取日志后，改用已有Word API导出，再使用原渲染器生成PNG；首轮COM关闭方法需要引用参数，修正为[ref]后重跑退出码0。渲染共7页，已逐页打开检查，正文、中文、表格、4张图和页码可读，无溢出或缺字。原始失败和最终成功日志保存在`.build/word_report/`，不把中间PDF或PNG当作最终用户产物。
+
+最终结构核验：DOCX ZIP完整、5表（行数7/3/9/9/13）、4张嵌入图片；姓名学号、手算、评分和AI说明保留。通过项目内联Python逐项核对8行指标、8行守恒、12行参数表（比率转百分比，显示至4位小数）；全部一致。13个受保护文件、5个基线文件哈希均未变。记录为`results/logs/10_word_report_validation.json`。本次只有报告及复现材料变化，不重复运行不受影响的仿真测试。
