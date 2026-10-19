@@ -3,4 +3,3 @@
 # Preserve raw experiment evidence and audited source documents byte for byte.
 results/** -text whitespace=cr-at-eol
 codex_tasks/*.md -text
-reports/*.docx -text
