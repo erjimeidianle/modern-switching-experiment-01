@@ -1,0 +1,15 @@
+{
+  ".github/workflows/feedback.yml": "f6ce8b163c6c99aef936e973df96cf7a60b0c2c1b8ab9a24648be314d96d1444",
+  ".github/workflows/grading.yml": "19b757d54f537ab47be42b572c0178f7c7bbd090a6a408541ff76187ca80b7b8",
+  ".github/workflows/homework-tracker.yml": "9e7f4318fb54e00ae149e09c8a89c15012cf919dce5ef18c4a9cf0d5602ed9c2",
+  "grading/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "grading/calculate_grade.py": "f0858d067e29b7f33608466091e8e85402d51c3fab31eb4ea8f9626af751bcbf",
+  "grading/check_report.py": "3a54a72a08bf354b08813b2ecf22291de754ff4421600ff94ce35b391dd73c0c",
+  "grading/test_circuit.py": "fa4b59cb799b9d574b85a29b607824890c3304191cc7cf5d488acc9aed652608",
+  "grading/test_framework.py": "e3afc7a6738cdb6f24ad977da6c3fa7d920bfe840035d5b227027e07e3e6f617",
+  "grading/test_integration.py": "f2ef8f48ca9612d71cea35e00e5cca9b6891c8996b1d297e9190d9bf5a44153d",
+  "grading/test_metrics.py": "81fde8823842b197c8d980764f34a5b918d4722dd967ba4007246a238f0c7b57",
+  "grading/test_packet.py": "3dadbe48643e0080a98061dfdc6fbbcd85833077e751454dfa272eb97c6fbed2",
+  "grading/test_tracking.py": "4cbda8a7a176be9f4a19d9e072c2570a9bfc12a8938cf16ae7675aab16f2b36a",
+  "grading/update_homework_tracking.py": "ae3cb1037f32c22b4352054bcb9a1cca092f7cc6cecaaf044675b4a186f545c9"
+}

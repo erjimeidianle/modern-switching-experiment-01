@@ -1,0 +1,5 @@
+# Markdown uses two trailing spaces for deliberate hard line breaks.
+*.md whitespace=-blank-at-eol
+# Preserve raw experiment evidence and audited source documents byte for byte.
+results/** -text whitespace=cr-at-eol
+codex_tasks/*.md -text

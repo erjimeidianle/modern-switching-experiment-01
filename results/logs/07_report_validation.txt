@@ -1,0 +1,4 @@
+Two-user hand calculation matches both simulations.
+REPORT.md has no template field placeholders.
+AI_LOG.md has no template field placeholders.
+Verified grade_report.json: automatic 70/70, manual 30 pending.

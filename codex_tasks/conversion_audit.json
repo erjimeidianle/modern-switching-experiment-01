@@ -1,0 +1,24 @@
+{
+  "source_file": "实验一_PRD_电路交换与分组交换.docx",
+  "source_paragraphs": 236,
+  "source_tables": 7,
+  "source_nonempty_cells": 148,
+  "source_URL_occurrences": 11,
+  "distinct_URLs": 9,
+  "original_URLs": {
+    "https://github.com/jwentong/modern-switching-experiment-01": 2,
+    "https://github.com/jwentong/modern-switching-experiment-01/issues/2": 2,
+    "https://git-scm.com/downloads": 1,
+    "https://www.python.org/downloads/": 1,
+    "https://code.visualstudio.com/": 1,
+    "https://github.com/YOUR-USERNAME/modern-switching-experiment-01.git": 1,
+    "https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo": 1,
+    "https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request-from-a-fork": 1,
+    "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks": 1
+  },
+  "paragraphs_missing_after_conversion": 0,
+  "table_cells_missing_after_conversion": 0,
+  "URLs_missing_after_conversion": 0,
+  "literal_virtualenv_command_occurrences": 11,
+  "markdown_sha256": "c96620f96b2ab41091da6a81300c600645db7ed0a1456432a445e231f1287d9b"
+}

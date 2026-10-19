@@ -1,0 +1,74 @@
+{
+  "circuit": {
+    "raw": {
+      "generated_payload_bits": 96,
+      "delivered_payload_bits": 96,
+      "dropped_payload_bits": 0,
+      "backlog_payload_bits": 0,
+      "wire_sent_bits": 96,
+      "completed": [
+        {
+          "user": 1,
+          "payload_bits": 96,
+          "delay_ticks": 2
+        }
+      ],
+      "trace": [
+        {
+          "tick": 0,
+          "wire_bits": 0,
+          "buffer_payload_bits": 96
+        },
+        {
+          "tick": 1,
+          "wire_bits": 96,
+          "buffer_payload_bits": 0
+        }
+      ]
+    },
+    "metrics": {
+      "payload_utilization": 0.375,
+      "wire_utilization": 0.375,
+      "mean_delay_ms": 2.0,
+      "max_delay_ms": 2.0,
+      "loss_ratio": 0.0,
+      "backlog_payload_bits": 0
+    }
+  },
+  "packet": {
+    "raw": {
+      "generated_payload_bits": 96,
+      "delivered_payload_bits": 96,
+      "dropped_payload_bits": 0,
+      "backlog_payload_bits": 0,
+      "wire_sent_bits": 128,
+      "completed": [
+        {
+          "user": 1,
+          "payload_bits": 96,
+          "delay_ticks": 1
+        }
+      ],
+      "trace": [
+        {
+          "tick": 0,
+          "wire_bits": 128,
+          "buffer_payload_bits": 0
+        },
+        {
+          "tick": 1,
+          "wire_bits": 0,
+          "buffer_payload_bits": 0
+        }
+      ]
+    },
+    "metrics": {
+      "payload_utilization": 0.375,
+      "wire_utilization": 0.5,
+      "mean_delay_ms": 1.0,
+      "max_delay_ms": 1.0,
+      "loss_ratio": 0.0,
+      "backlog_payload_bits": 0
+    }
+  }
+}

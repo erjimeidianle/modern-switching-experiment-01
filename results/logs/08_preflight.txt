@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "protected_files": 13,
+  "signatures_unchanged": {
+    "serve_circuit": "queues, tick, cfg",
+    "serve_packet": "queue, tick, cfg",
+    "summarize": "raw, cfg"
+  },
+  "branch": "main",
+  "head": "bc9099e3f932168af640ce0d03abc2c3f283e10f",
+  "origin": "https://github.com/erjimeidianle/modern-switching-experiment-01.git",
+  "index_empty": true,
+  "baseline_sha256_unchanged": true,
+  "report_tables_match": true,
+  "report_links_exist": true,
+  "credential_pattern_scan": "no matches in candidates",
+  "automatic_score": 70,
+  "manual_pending": 30,
+  "required_files": [
+    "src/part1_circuit.py",
+    "src/part2_packet.py",
+    "src/metrics.py",
+    "REPORT.md",
+    "AI_LOG.md",
+    "student_tests/test_my_case.py",
+    "results/comparison.json",
+    "results/comparison.csv",
+    "results/comparison_metrics.png",
+    "results/queue_occupancy.png",
+    "results/pcm_frame_view.png",
+    "results/extra/header_sweep.json",
+    "results/extra/header_sweep.csv",
+    "results/extra/header_sweep.png"
+  ],
+  "supporting_files": [
+    "requirements-lock.txt",
+    ".vscode/settings.json",
+    "docs/execution_log.md",
+    "docs/submission_checklist.md",
+    "scripts/verify_baseline.py",
+    "scripts/header_experiment.py",
+    "scripts/preflight.py",
+    "codex_tasks/实验一_PRD_电路交换与分组交换.md"
+  ],
+  "evidence_logs": "results/logs/ (original runs and diagnosed initial attempts)",
+  "human_review": "Student understanding and approval are pending; no Git write operations performed."
+}

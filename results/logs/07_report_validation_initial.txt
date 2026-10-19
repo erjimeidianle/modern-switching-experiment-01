@@ -1,0 +1,4 @@
+Two-user hand calculation matches both simulations.
+Traceback (most recent call last):
+  File "<stdin>", line 20, in <module>
+AssertionError

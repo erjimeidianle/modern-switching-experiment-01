@@ -1,0 +1,10 @@
+{
+  "authenticated_login": "erjimeidianle",
+  "full_name": "erjimeidianle/modern-switching-experiment-01",
+  "fork": true,
+  "parent": "jwentong/modern-switching-experiment-01",
+  "source": "jwentong/modern-switching-experiment-01",
+  "default_branch": "main",
+  "method": "GitHub connector GET repository metadata",
+  "previous_shell_attempt": "Invoke-RestMethod failed: Authentication failed, see inner exception; null fields from this failed attempt were not evidence."
+}

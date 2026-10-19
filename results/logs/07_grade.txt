@@ -1,0 +1,8 @@
+环境配置正确
+自动评分结果
+总分: 70.0/100（自动项最高70分；教师复核30分待评，非最终成绩）
+environment: 5/5 pass
+circuit: 20.0/20 4/4 passed
+packet: 20.0/20 4/4 passed
+metrics: 15.0/15 3/3 passed
+artifacts: 10/10 结果齐全，内容仍需教师复核

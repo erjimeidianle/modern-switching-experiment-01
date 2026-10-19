@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "config": {
+    "users": 4,
+    "ticks": 256,
+    "slot_bits": 128,
+    "tick_ms": 1.0,
+    "header_bits": 32,
+    "buffer_payload_bits": 4096
+  },
+  "rows": 8,
+  "traces": 8,
+  "conservation": [
+    {
+      "key": "continuous/circuit",
+      "generated": 32768,
+      "delivered": 32768,
+      "dropped": 0,
+      "backlog": 0
+    },
+    {
+      "key": "continuous/packet",
+      "generated": 32768,
+      "delivered": 26112,
+      "dropped": 2944,
+      "backlog": 3712
+    },
+    {
+      "key": "staggered_burst/circuit",
+      "generated": 24576,
+      "delivered": 16128,
+      "dropped": 4512,
+      "backlog": 3936
+    },
+    {
+      "key": "staggered_burst/packet",
+      "generated": 24576,
+      "delivered": 24576,
+      "dropped": 0,
+      "backlog": 0
+    },
+    {
+      "key": "synchronized_burst/circuit",
+      "generated": 12288,
+      "delivered": 11136,
+      "dropped": 0,
+      "backlog": 1152
+    },
+    {
+      "key": "synchronized_burst/packet",
+      "generated": 12288,
+      "delivered": 10752,
+      "dropped": 0,
+      "backlog": 1536
+    },
+    {
+      "key": "light_random/circuit",
+      "generated": 6912,
+      "delivered": 6912,
+      "dropped": 0,
+      "backlog": 0
+    },
+    {
+      "key": "light_random/packet",
+      "generated": 6912,
+      "delivered": 6912,
+      "dropped": 0,
+      "backlog": 0
+    }
+  ],
+  "images": {
+    "comparison_metrics.png": [
+      2100,
+      690
+    ],
+    "queue_occupancy.png": [
+      1350,
+      600
+    ],
+    "pcm_frame_view.png": [
+      1650,
+      450
+    ]
+  },
+  "sha256": {
+    "comparison.json": "89ef5c939b07c94f87455f5f46e62c02abd368a7c6c964cf945164d7c12c1ff1",
+    "comparison.csv": "0a8bcbfff4986d19ed69201a25dae1f27f9331bf43a84393e63b8449e19ad978",
+    "comparison_metrics.png": "9fa2fc92e17bcbe3793b49736c19367fb687b9429384992f29dd2cb3ef05dde9",
+    "queue_occupancy.png": "2e297fe0ee89b7647ae880d074ad26baa19191990c2b15925d61361ed0c42aea",
+    "pcm_frame_view.png": "6341f1d16092a3b48f6db885566dfbb752cc5262d92799a1c3ed2af2670bdf16"
+  },
+  "repeat_identical": true
+}
